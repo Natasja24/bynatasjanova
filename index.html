@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<logo><img src="ChatGPT Image 1 mrt. 2026 13_19_28.png" alt="Bynatasjanova Logo"></logo>
+
+<title>Bynatasjanova | Digital Agent </title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+<style>
+/* logo */
+logo{
+    position:fixed;
+    top:20px;
+    left:20px;
+    z-index:1001;
+}
+logo img{
+    width:120px;
+    height:auto;
+}
+
+
+/* RESET */
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#0A0A0A;
+    color:#EDEDED;
+    scroll-behavior:smooth;
+    cursor:none;
+    overflow-x:hidden;
+}
+
+/* CUSTOM CURSOR */
+.cursor{
+    width:20px;
+    height:20px;
+    border:2px solid #C6A85A;
+    border-radius:50%;
+    position:fixed;
+    pointer-events:none;
+    transform:translate(-50%,-50%);
+    transition:0.1s ease;
+    z-index:9999;
+}
+
+/* NAVIGATION */
+nav{
+    position:fixed;
+    width:100%;
+    padding:30px 8%;
+    display:flex;
+    justify-content:space-between;
+    background:rgba(10,10,10,0.85);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+nav h2{font-family:'Playfair Display',serif;letter-spacing:1px;}
+
+nav ul{list-style:none;display:flex;gap:40px;}
+
+nav a{text-decoration:none;color:#C6A85A;text-transform:uppercase;font-size:13px;letter-spacing:2px;}
+nav a:hover{color:#ffffff;}
+
+/* HERO IMAGE */
+.hero{
+    position:relative;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    overflow:hidden;
+}
+
+.hero img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-1;
+    filter:brightness(0.35);
+}
+
+.hero-content{
+    z-index:2;
+    color:white;
+}
+
+.hero h1{font-family:'Playfair Display',serif;font-size:70px;margin-bottom:30px;}
+.hero p{color:#BEBEBE;font-size:20px;margin-bottom:50px;}
+
+/* BUTTONS */
+.btn{padding:18px 45px;border-radius:50px;text-decoration:none;letter-spacing:1px;font-size:14px;margin:10px;transition:0.3s;}
+.gold{background:#C6A85A;color:#0A0A0A;}
+.gold:hover{background:#ffffff;}
+.outline{border:1px solid #C6A85A;color:#C6A85A;}
+.outline:hover{background:#C6A85A;color:#0A0A0A;}
+
+/* SECTIONS */
+section{padding:160px 8%;}
+
+/* HEADINGS */
+h2{font-family:'Playfair Display',serif;font-size:44px;text-align:center;margin-bottom:70px;}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(50px);transition:1.2s ease;}
+.reveal.active{opacity:1;transform:translateY(0);}
+
+/* POSITIONING TEXT */
+.positioning{max-width:900px;margin:auto;text-align:center;color:#BEBEBE;font-size:22px;line-height:1.8;}
+
+/* PACKAGES */
+.packages{display:flex;flex-wrap:wrap;gap:50px;justify-content:center;}
+.package{background:#151515;padding:50px;width:300px;border-radius:12px;border:1px solid rgba(198,168,90,0.15);transition:0.4s;text-align:center;}
+.package:hover{transform:translateY(-10px);border-color:#C6A85A;}
+.package h3{color:#C6A85A;margin-bottom:15px;}
+.package p{color:#BEBEBE;line-height:1.6;}
+.package .price{margin-top:20px;font-weight:600;font-size:18px;color:#C6A85A;}
+
+/* PORTFOLIO/PHOTOS */
+.portfolio{display:flex;flex-wrap:wrap;gap:30px;justify-content:center;}
+.portfolio img{width:300px;border-radius:15px;transition:0.3s;}
+.portfolio img:hover{transform:scale(1.05);}
+
+/* TESTIMONIAL */
+.testimonial{background:#151515;padding:60px;border-left:3px solid #C6A85A;max-width:800px;margin:0 auto 40px auto;}
+.testimonial p{font-size:20px;font-style:italic;}
+.testimonial strong{display:block;margin-top:20px;color:#C6A85A;}
+
+/* CTA */
+.cta{text-align:center;background:#111;}
+.cta h2{margin-bottom:40px;}
+
+/* CONTACT */
+.contact form{max-width:600px;margin:auto;display:flex;flex-direction:column;gap:25px;}
+input,textarea{background:#151515;border:1px solid rgba(198,168,90,0.4);padding:15px;color:white;border-radius:5px;}
+button{background:#C6A85A;border:none;padding:18px;color:#0A0A0A;border-radius:50px;cursor:pointer;}
+button:hover{background:white;}
+
+/* FOOTER */
+footer{text-align:center;padding:80px 20px;color:#777;font-size:14px;}
+
+/* RESPONSIVE */
+@media(max-width:768px){.hero h1{font-size:40px;} nav ul{display:none;} body{cursor:auto;} .cursor{display:none;}}
+
+</style>
+</head>
+<body>
+
+<div class="cursor"></div>
+
+<nav>
+<br> 
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#positioning">Vision</a></li>
+<li><a href="#packages">Packages</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HERO image -->
+<section class="hero">
+<img src="PIC-11.jpg" alt="HERO Image">
+<div class="hero-content reveal">
+<h1>bynatasjanova<br></h1>
+<p>Webdesign . Digital service . Travel lifestyle
+</p>
+<a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jouwlink'});return false;" class="btn gold">call & watsapp boek </a>
+<a href="https://buy.stripe.com/jouwlink" class="btn outline">Start Premium Package</a>
+</div>
+</section>
+
+<section id="positioning">
+<h2 class="reveal">Over bynatasjanova </h2>
+<div class="positioning reveal">
+Bij Bynatasjanova draait alles om het creëren van rust, overzicht en groei voor ondernemers. 
+In een wereld waarin tijd schaars is en online zichtbaarheid essentieel, bied ik professionele ondersteuning op afstand als virtual assistant én creatieve oplossingen op het gebied van webdesign.
+<br>
+Mijn visie is simpel: ondernemers moeten zich kunnen focussen op waar ze écht goed in zijn. 
+Door taken uit handen te nemen en digitale processen te stroomlijnen, help ik mijn klanten efficiënter te werken en hun bedrijf naar een hoger niveau te tillen.
+<br>
+Als virtual assistant ondersteun ik bij uiteenlopende werkzaamheden, van administratieve taken en e-mailbeheer tot planning en organisatie. 
+Betrouwbaarheid, structuur en discretie staan hierbij centraal. Tegelijkertijd zorg ik als webdesigner voor sterke, gebruiksvriendelijke en visueel aantrekkelijke websites die niet alleen mooi zijn, maar ook resultaat opleveren.
+Bynatasjanova staat voor persoonlijke aandacht, kwaliteit en een moderne aanpak. Ik denk mee, werk proactief en streef altijd naar oplossingen die écht passen bij de ondernemer en diens doelen.
+Samen bouwen we aan een sterke, professionele en toekomstbestendige online aanwezigheid.
+
+</div>
+</section>
+
+<section id="packages">
+<h2 class="reveal">Premium Packages</h2>
+<div class="packages">
+<div class="package reveal">
+<h3>Branding & Website</h3>
+<p>logo & fotografie photoshop  & website  </p>
+<div class="price">prijs aanvraag </div>
+</div>
+<div class="package reveal">
+<h3>Website Only</h3>
+<p>Deze website maak ik met html & css enz. 
+    Natuurlijk kan ik ook wordpress.  </p>
+<div class="price">prijs aanvraag </div>
+</div>
+<div class="package reveal">
+<h3>Update & bijhouden </h3>
+<p>Het bij houden van uw website en online aanwezigheid.
+    - website maken 
+    - update 
+    - enz.  </p>
+<div class="price">prijs aanvraag </div>
+</div>
+<div class="package reveal">
+<h3>Virtual Assistant </h3>
+<p>Administratieve ondersteuning op afstand, zoals:
+dit omvat onder andere:
+- Agenda-beheer
+- Plannen en opvolgen van afspraken
+- Structuur aanbrengen in processen en terugkerende taken
+- Deadlines bewaken en overzicht creëren </p>
+</p>
+<div class="price">prijs aanvraag </div>
+</div>
+</section>
+
+<section id="portfolio">
+<h2 class="reveal">Portfolio</h2>
+<div class="portfolio reveal">
+<img src="Schermafbeelding 2025-07-01 om 09.41.34.png" alt="Project 1">
+<img src="natas.jpg" alt="Project 2">
+<img src="B1ECBE29-50BB-4127-A7B7-432B0A92FE4C.PNG" alt="Project 3">
+</div>
+</section>
+
+<section>
+<h2 class="reveal">klanten ervaringen</h2>
+<div class="testimonial reveal">
+<p>"Review "</p>
+<strong>– 
+</strong>
+</div>
+</section>
+
+<section class="cta">
+<h2 class="reveal">Life time </h2>
+<a href="#contact" class="btn gold reveal">coming soon </a>
+</section>
+
+<section id="contact" class="contact">
+<h2 class="reveal">vraag een strategiegesprek aan</h2>
+<form action="https://formsubmit.co/worknatasja@hotmail.com" method="POST" class="reveal">
+<input type="text" name="name" placeholder="Name" required>
+<input type="email" name="email" placeholder="Email" required>
+<textarea name="message" rows="5" placeholder="Tell us about your vision..." required></textarea>
+<button type="submit">verzoek indienen</button>
+</form>
+</section>
+
+<footer>
+© 2026 Bynatasjanova — Digital Agent. All rights reserved.
+</footer>
+
+<script>
+
+/* CUSTOM CURSOR */
+const cursor=document.querySelector('.cursor');
+document.addEventListener('mousemove',e=>{
+cursor.style.left=e.pageX+'px';
+cursor.style.top=e.pageY+'px';
+});
+
+/* SCROLL REVEAL */
+function reveal(){
+let reveals=document.querySelectorAll('.reveal');
+for(let i=0;i<reveals.length;i++){
+let windowHeight=window.innerHeight;
+let elementTop=reveals[i].getBoundingClientRect().top;
+if(elementTop < windowHeight-100){
+reveals[i].classList.add('active');
+}
+}
+}
+window.addEventListener('scroll',reveal);
+
+</script>
+
+</body>
+</html>
